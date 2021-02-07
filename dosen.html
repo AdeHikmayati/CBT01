@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Meta Tag -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Dashboard</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	
+	<!-- Required CSS -->
+	<link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+	<link rel="stylesheet" href="assets/bower_components/select2/css/select2.min.css">
+	<link rel="stylesheet" href="assets/dist/css/AdminLTE.min.css">
+	<link rel="stylesheet" href="assets/dist/css/skins/skin-red.min.css">
+	<link rel="stylesheet" href="assets/bower_components/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" href="assets/bower_components/pace/pace-theme-flash.css">
+	
+	<!-- Datatables Buttons -->
+	<link rel="stylesheet" href="assets/bower_components/datatables.net-bs/plugins/Buttons-1.5.6/css/buttons.bootstrap.min.css">
+
+	<!-- textarea editor -->
+	<link rel="stylesheet" href="assets/bower_components/codemirror/lib/codemirror.min.css">
+    <link rel="stylesheet" href="assets/bower_components/froala_editor/css/froala_editor.pkgd.min.css">
+    <link rel="stylesheet" href="assets/bower_components/froala_editor/css/froala_style.min.css">
+    <link rel="stylesheet" href="assets/bower_components/froala_editor/css/themes/royal.min.css">
+	<!-- /texarea editor; -->
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/dist/css/mystyle.css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link rel="manifest" href="./manifest.json">
+	<link rel ="apple-touch-icon" href = "./assets/dist/img/icon-192x192.png">
+	<meta name="apple-mobile-web-app-status-bar" content="#b30000">
+   	<meta name="theme-color" content="#b30000">
+
+</head>
+
+<!-- Must Load First -->
+<script src="assets/bower_components/jquery/jquery-3.3.1.min.js"></script>
+<script src="assets/bower_components/sweetalert2/sweetalert2.all.min.js"></script>
+<script src="assets/bower_components/select2/js/select2.full.min.js"></script>
+<script src="assets/bower_components/moment/min/moment.min.js"></script>
+<script src="assets/bower_components/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>		
+
+<script type="text/javascript">
+	let base_url = '';
+</script>
+
+<body class="hold-transition skin-red sidebar-mini">
+	<div class="wrapper">
+
+		<header class="main-header">
+			<a href="dashboard" class="logo">
+    <span class="logo-mini"><b>CBT</b></span>
+    <span class="logo-lg"><b>ITKJ-</b>CBT </span>
+</a>
+
+<nav class="navbar navbar-static-top" role="navigation">
+    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+    </a>
+    
+</nav>		</header>
+
+		<!-- Sidebar -->
+		<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+
+	<!-- sidebar: style can be found in sidebar.less -->
+	<section class="sidebar">
+
+		<!-- Sidebar user panel (optional) -->
+		<div class="user-panel">
+			<div class="pull-left image">
+				<img src="assets/dist/img/user1.png" class="img-circle" alt="User Image">
+			</div>
+			
+		</div>
+		
+		<ul class="sidebar-menu" data-widget="tree">
+			<li class="header">MAIN MENU</li>
+			<!-- Optionally, you can add icons to the links -->
+						<li class="active"><a href="dashboard"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+									<li class="">
+				<a href="soal" rel="noopener noreferrer">
+					<i class="fa fa-file-text-o"></i> <span>Bank Soal</span>
+				</a>
+			</li>
+									<li class="">
+				<a href="ujian/master" rel="noopener noreferrer">
+					<i class="fa fa-chrome"></i> <span>Ujian</span>
+				</a>
+			</li>
+												<li class="header">REPORTS</li>
+			<li class="">
+				<a href="hasilujian" rel="noopener noreferrer">
+					<i class="fa fa-file"></i> <span>Hasil Ujian</span>
+				</a>
+			</li>
+								</ul>
+
+	</section>
+	<!-- /.sidebar -->
+</aside>		<!-- /.sidebar -->
+
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
+			<section class="content-header">
+				
+			</section>
+			<!-- Main content -->
+			<section class="content container-fluid">
+<div class="row">
+    <div class="col-sm-4">
+      
+</div>
+
+			</section>
+			<!-- /.content -->
+			</div>
+			<!-- /.content-wrapper -->
+
+			<!-- Main Footer -->
+			<footer class="main-footer">
+				<!-- To the right -->
+				<div class="pull-right hidden-xs">
+					ITKJ-UJian Online
+				</div>
+				<!-- Default to the left -->
+				<strong>Developed &copy; 2020. By <a href="https://www.instagram.com/adecalmaya/">Amay-Create</a>. </strong> 
+			</footer>
+
+			</div>
+
+			<!-- Required JS -->
+			<script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+			<script src="assets/bower_components/datatables.net-bs/js/jquery.dataTables.min.js"></script>
+			<script src="assets/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+
+			<!-- Datatables Buttons -->
+			<script src="assets/bower_components/datatables.net-bs/plugins/Buttons-1.5.6/js/dataTables.buttons.min.js"></script>
+			<script src="assets/bower_components/datatables.net-bs/plugins/Buttons-1.5.6/js/buttons.bootstrap.min.js"></script>
+			<script src="assets/bower_components/datatables.net-bs/plugins/JSZip-2.5.0/jszip.min.js"></script>
+			<script src="assets/bower_components/datatables.net-bs/plugins/pdfmake-0.1.36/pdfmake.min.js"></script>
+			<script src="assets/bower_components/datatables.net-bs/plugins/pdfmake-0.1.36/vfs_fonts.js"></script>
+			<script src="assets/bower_components/datatables.net-bs/plugins/Buttons-1.5.6/js/buttons.html5.min.js"></script>
+			<script src="assets/bower_components/datatables.net-bs/plugins/Buttons-1.5.6/js/buttons.print.min.js"></script>
+			<script src="assets/bower_components/datatables.net-bs/plugins/Buttons-1.5.6/js/buttons.colVis.min.js"></script>
+
+			<script src="assets/bower_components/pace/pace.min.js"></script>
+			<script src="assets/dist/js/adminlte.min.js"></script>
+
+			<!-- Textarea editor -->
+			<script src="assets/bower_components/codemirror/lib/codemirror.min.js"></script>
+			<script src="assets/bower_components/codemirror/mode/xml.min.js"></script>
+			<script src="assets/bower_components/froala_editor/js/froala_editor.pkgd.min.js"></script>
+
+			<!-- App JS -->
+			<script src="assets/dist/js/app/dashboard.js"></script>
+
+			<!-- Custom JS -->
+			<script type="text/javascript">
+				$.fn.dataTableExt.oApi.fnPagingInfo = function(oSettings) {
+					return {
+						"iStart": oSettings._iDisplayStart,
+						"iEnd": oSettings.fnDisplayEnd(),
+						"iLength": oSettings._iDisplayLength,
+						"iTotal": oSettings.fnRecordsTotal(),
+						"iFilteredTotal": oSettings.fnRecordsDisplay(),
+						"iPage": Math.ceil(oSettings._iDisplayStart / oSettings._iDisplayLength),
+						"iTotalPages": Math.ceil(oSettings.fnRecordsDisplay() / oSettings._iDisplayLength)
+					};
+				};
+
+				function ajaxcsrf() {
+					var csrfname = 'csrf_test_name';
+					var csrfhash = 'cc6fbb676cd5ebfdeab7330a8cdee42c';
+					var csrf = {};
+					csrf[csrfname] = csrfhash;
+					$.ajaxSetup({
+						"data": csrf
+					});
+				}
+
+				function reload_ajax() {
+					table.ajax.reload(null, false);
+				}
+			</script>
+			<script src="index.js"></script>
+
+			</body>
+
+			</html>
